@@ -1,5 +1,4 @@
-# PreparedStatement【重点】
-
+# PreparedStatement
 ## 1.1 概述
 
 **SQL注入问题**
@@ -545,4 +544,3 @@ public class JdbcUtils {
 
 }
 ```
-
