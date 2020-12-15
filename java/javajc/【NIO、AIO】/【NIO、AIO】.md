@@ -1,34 +1,4 @@
 # 【NIO、AIO】
-
-##### 反馈复习
-
-```java
-了解注意,演示案例
-1.ByteBuffer 字节缓冲区(底层字节数组) put clear flip...
-    构造:
-		ByteBuffer buffer = ByteBuffer.allocate(int size);
-	成员方法:
-		put(byte[] bs);
-		flip();切换读写模式
-2.Channel 用于读写数据,类似于IO流的流
-        FileChannel    
-        SocketChannel
-        ServerSockerChannel
-        操作数据的四步:
-		a.读数据写入到Buffer中
-        b.调用buffer的flip方法,切换读写模式  
-        c.将Buffer中数据读取出来
-        d.调用clear方法,清空Buffer    
-```
-
-##### 今日内容
-
-```java
-了解注意,演示案例
-NIO之Selector(选择器,多路复用器)
-AIO(异步非阻塞的IO)       
-```
-
 ### 第一章 Select(选择器)(了解)
 
 ##### 1.1 多路复用的概念
@@ -533,7 +503,7 @@ public class SelectorDemo03 {
     ======================
 ```
 
-### 第二章 AIO(异步、非阻塞)(了解)
+### 第二章 AIO(异步、非阻塞)
 
 ##### 2.1 AIO概述和分类
 
@@ -855,20 +825,3 @@ public class AsynchronousServerSocketChannelDemo {
     我是客户端...
 
 ```
-
-##### 总结
-
-```java
-能够说出Selector选择器的作用
-    可以让多个通道注册到其上面,然后可以监听多个通道的接收客户端事件,从减少开启线程数量,提高CPU的性能
-能够使用Selector选择器
-    public Set<SelectionKey> keys();//获取所有注册到当前选择器的通道
-    public Set<SelectionKey> selectedKeys(); //获取被连接的通道
-	public int select();
-			a.获取"本次新增"的被连接通道数量
-            b.当"所有的通道"没有一个被连接时,该方法会阻塞    
-能够说出AIO的特点
-    客户端连接服务器,服务器接收可以客户端,均可以采用异步非阻塞方式
-    客户端和服务器的数据交互,读写数据也可以使用异步非阻塞方式            
-```
-
