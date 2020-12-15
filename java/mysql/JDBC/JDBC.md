@@ -8,7 +8,7 @@ JDBC: Java DataBase Connectity ---- java数据库的连接
 
 java代码要想操作各种数据库就得使用JDBC
 
-![jdbc的引入](img\jdbc的引入.png)
+![jdbc的引入](JDBC\img\jdbc的引入.png)
 
 ## JDBC的由来
 
@@ -17,7 +17,7 @@ JDBC规范定义接口，具体的实现由各大数据库厂商来实现 ，JDB
 
 我们在用java代码操作数据库时只需要会使用JDBC接口中的方法即可，使用简单
 
-![jdbc的概述](img\jdbc的概述.png)
+![jdbc的概述](JDBC\img\jdbc的概述.png)
 
 
 
@@ -158,7 +158,7 @@ next() 可以让指针向下移动一行 默认在第一行之前  返回值是b
 
  get类型(String 列名)
 
-![结果集的概述](img\结果集的概述.png)
+![结果集的概述](JDBC\img\结果集的概述.png)
 
 ~~~
 @Test  //查询实现
@@ -325,9 +325,9 @@ preparedStatement：select * from 表 where   name=？ and  password=？;
 
 常见的连接池：
 
-![01](img\01.bmp)
+![01](JDBC\img\01.bmp)
 
-![连接池](img\连接池.png)
+![连接池](JDBC\img\连接池.png)
 
 ## druid连接池的使用
 
