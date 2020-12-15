@@ -264,8 +264,6 @@ public class MybatisUtils {
     </typeAliases>
 ```
 
-![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571627558763.png)
-
 **4）mappers标签**
 
 ```markdown
