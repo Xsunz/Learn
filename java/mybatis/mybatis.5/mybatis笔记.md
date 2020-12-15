@@ -1,25 +1,3 @@
-
-
-# Mybatis框架第一天
-
-**今日目标**
-
-~~~
-
-使用mybatis框架，对数据库的单表进行crud操作
-					1 普通方式 （了解）
-					2 接口方式
-                    
-今日掌握的内容：
-1 会搭建mybatis环境 使用接口方式完成数据库单表的crud操作
-2 会配置别名类型  会配置第三方数据库信息文件加载
-3 会今日下午咱们说的4个细节处理方案                    
-                      ResultMap的手动封装
-                      多条件参数的处理方案
-                      模糊匹配的处理方案
-                      插入语句主键返回策略的处理方案
-~~~
-
 ##### 什么是框架？
 
 ~~~
@@ -36,7 +14,7 @@
 
 ![框架概述](assets\框架概述.png)
 
-## 一 框架简介【了解】
+## 一 框架简介
 
 软件开发常用的架构是三层架构，之所以流行是因为有着清晰的任务划分。一般包括以下三层：
 
@@ -46,7 +24,7 @@ Mybatis框架:对JDBC的封装，在dao层和数据库交互
 
 
 
-## 二 Mybatis简介【了解】
+## 二 Mybatis简介
 
 **ORM（Object Relational Mapping）对象关系映射**
 
@@ -58,7 +36,7 @@ Mybatis框架:对JDBC的封装，在dao层和数据库交互
 
 
 
-## 三 Mybatis快速入门【重点】
+## 三 Mybatis快速入门
 
 **需求**
 	查询数据库user表的所有记录，封装到User对象中。
@@ -654,8 +632,3 @@ public void save2(User user);
     insert into user(username,birthday,sex,address) values(#{username},#{birthday},#{sex},#{address})
 </insert>
 ```
-
-
-
-
-
