@@ -12,13 +12,13 @@
 企业开发中都在用，不会它，你就无法正常进入企业进行开发工作。
 ~~~
 
-![框架概述](assets\框架概述.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0.png)
 
 ## 一 框架简介
 
 软件开发常用的架构是三层架构，之所以流行是因为有着清晰的任务划分。一般包括以下三层：
 
- ![mybatis框架的作用](assets\mybatis框架的作用.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/mybatis%E6%A1%86%E6%9E%B6%E7%9A%84%E4%BD%9C%E7%94%A8.png)
 
 Mybatis框架:对JDBC的封装，在dao层和数据库交互
 
@@ -28,7 +28,7 @@ Mybatis框架:对JDBC的封装，在dao层和数据库交互
 
 **ORM（Object Relational Mapping）对象关系映射**
 
-![orm](assets\orm.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/orm.png)
 
 ****
 
@@ -66,39 +66,38 @@ Mybatis框架:对JDBC的封装，在dao层和数据库交互
 
 1. 导入数据库和表数据
 
-![1571621056627](assets/1571621056627.png) 
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571621056627.png)
 
 
 
 2. 创建java工程，导入jar包（MySQL驱动、mybatis、log4j日志、junit）
 
-![1571621231606](assets/1571621231606.png)  
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571621231606.png)
 
 
 
 3. 编写User实体类
 
-![1571621331280](assets/1571621331280.png) 
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571621331280.png)
 
 
 
 4. 编写xml映射文件
 
-![1571621606910](assets/1571621606910.png) 
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571621606910.png)
 
 5. 编写SqlMapConfig.xml核心配置文件
 
-![1571621974532](assets/1571621974532.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571621974532.png)
 
 6. 编写测试代码
 
-![1571622462298](assets/1571622462298.png) 
-
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571622462298.png)
 
 
 ## 四 Mybatis映射文件概述
 
-![1571623550945](assets/1571623550945.png) 
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571623550945.png)
 
 
 
@@ -195,7 +194,7 @@ public class MybatisUtils {
 
 ## 七 Mybatis核心文件概述
 
-![1571626720833](assets/1571626720833.png) 
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571626720833.png)
 
 
 
@@ -205,7 +204,8 @@ public class MybatisUtils {
 * 数据库环境配置
 ```
 
-![1571626854457](assets/1571626854457.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571626854457.png)
+
 
 ~~~
 1. 其中，事务管理器（transactionManager）类型有两种：
@@ -264,7 +264,7 @@ public class MybatisUtils {
     </typeAliases>
 ```
 
-![1571627558763](assets/1571627558763.png) 
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571627558763.png)
 
 **4）mappers标签**
 
@@ -278,7 +278,7 @@ public class MybatisUtils {
 
 **核心配置文件标签顺序**
 
-![1571628218147](assets/1571628218147.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571628218147.png)
 
 
 
@@ -354,7 +354,7 @@ SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(in);
 4. 接口方法返回值类型与statement（子标签）的resultType属性一致
 ```
 
-![接口开发](assets\接口开发.bmp)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/接口开发.bmp)
 
 
 
@@ -394,29 +394,9 @@ public interface UserMapper {
 </mapper>
 ```
 
-**作业**
-
-> 练习 新增、修改、删除、根据id查询
-
-
-
-
-
-## 十 Mybatis高级查询【重点】
-
-**环境搭建**
-
-```markdown
-1. 将 web16_mybatis03_dao_proxy 复制改名为 web16_mybatis04_condition
-```
-
-![1571643830195](assets/1571643830195.png) 
-
-
-
 ### 10.1 ResutlMap属性
 
-![细节1](assets\细节1.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/细节1.png)
 
 ```markdown
 * resultType
@@ -462,7 +442,7 @@ public interface UserMapper {
 
 ​	根据id和username查询user表
 
-![细节2](assets\细节2.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/细节2.png)
 
 ```java
 // 多条件查询
@@ -510,7 +490,7 @@ public List<User> findByIdAndUsername2(@Param("id") Integer id,@Param("username"
 
 ​	根据username模糊查询user表
 
-![细节3](assets\细节3.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/细节3.png)
 
 ```java
 // 模糊查询
@@ -553,7 +533,7 @@ public List<User> findByUsername3(String username);
 
 
 
-### 10.4 ${} 与 #{} 区别【面试题】
+### 10.4 ${} 与 #{} 区别
 
 ```java
 ${} ：底层 Statement
@@ -581,7 +561,7 @@ ${} ：底层 Statement
 * 将 web16_mybatis03_dao_proxy 复制改名为 web16_mybatis05_mapper_config
 ```
 
-![1571647906502](assets/1571647906502.png) 
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/1571647906502.png)
 
 
 
@@ -591,7 +571,7 @@ ${} ：底层 Statement
 
 **2）selectKey**【复杂，但通用】
 
-![细节4](assets\细节4.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mybatis/mybatis.5/assets/细节4.png)
 
 ```java
 // 返回主键
