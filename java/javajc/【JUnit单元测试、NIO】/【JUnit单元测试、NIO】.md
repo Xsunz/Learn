@@ -1,38 +1,5 @@
-# day24【JUnit单元测试、NIO】
-
-##### 反馈复习
-
-```java
-1.网络编程的一些概念
-    IP: 每一台计算机的唯一标识
-    端口号: 标识计算机上某个软件
-    网络通信协议: 在网络传输数据的规则
-        TCP: 面向有连接的
-		UDP: 面向无连接的
-2.基于TCP协议的数据交互
-        客户端: Socket
-            构造方法:
-			public Socket("服务器的IP",服务器的端口号)
-		服务器: ServerSocket
-            public ServerSocket(服务器运行的端口号)
-3.基于TCP的文件上传
-          具体案例代码不写
-4.体验BS模式!!!            
-```
-
-##### 今日内容
-
-```java
-今天和明天这两天以了解为主(演示Demo)
-1.Junit单元测试[重点]
-2.NIO(了解)
-    缓冲区Buffer
-    通道channel
-    选择器Selector
-3.AIO(了解)    
-```
-
-### 第一章 Junit单元测试【重点】
+#【JUnit单元测试、NIO】
+### 第一章 Junit单元测试
 
 ##### 1.什么是单元测试
 
@@ -605,23 +572,3 @@ public class ServerSocketChannelDemo {
 }
 
 ```
-
-##### 总结
-
-```java
-能够使用Junit进行单元测试[必须掌握]
-能够说出同步和异步的概念
-    同步阻塞: 调用功能时,等待,直到功能完成
-    同步非阻塞:调用功能时,不等待,程序继续向下执行,后期需要自己写代码判断功能是佛结束,是否有结果
-	异步非阻塞:调用功能时,不等待,程序继续向下执行,功能完成后自动通知我们  
-能够说出阻塞和非阻塞的概念
-   阻塞,调用功能时,等待,直到功能完成
-   非阻塞,调用功能时,不等待,程序继续向下执行 
-能够创建和使用ByteBuffer
-     a.ByteBuffer的创建(3种)
-     b.ByteBuffer的各种(put,position,limit,capacity,clear,flip)   
-        
-能够使用MappedByteBuffer实现高效读写(案例练习一遍即可)
-能够使用ServerSocketChannel和SocketChannel实现连接并收发信息(案例练习一遍即可)
-```
-
