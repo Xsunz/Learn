@@ -8,7 +8,7 @@ JDBC: Java DataBase Connectity ---- java数据库的连接
 
 java代码要想操作各种数据库就得使用JDBC
 
-![jdbc的引入](java/mysql/JDBC/img/jdbc的引入.png)
+![jdbc的引入](java\mysql\JDBC\img\jdbc的引入.png)
 
 ## JDBC的由来
 
