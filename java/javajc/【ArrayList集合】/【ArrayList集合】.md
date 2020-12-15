@@ -1,6 +1,5 @@
 # 【ArrayList集合】
 
-##### 反馈和复习
 
 ```java
 	String
@@ -27,13 +26,7 @@
 			public String toString();
 ```
 
-##### 今日内容
 
-```java
-ArrayList类(重点!!!!!!!!)
-ArrayList我们称为集合(长度可变的数组)   
-    增删改查   
-```
 
 #### 第一章 ArrayList集合
 
