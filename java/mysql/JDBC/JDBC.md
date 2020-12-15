@@ -587,35 +587,5 @@ jdbc+druid crud一套
 
         JDBCUtils.closeZY(null,preparedStatement,connection);
     }
-~~~
-
-
-
-作业1：三层架构完成转账业务
-
-需求：使用jdbc+druid+工具类操作的最终版（配置文件）
-
-![事务在java代码场景下的应用](img\事务在java代码场景下的应用.png)
-
-作业2：三层架构完成登录业务
-
-需求：使用jdbc+druid+工具类操作的最终版（配置文件）
-
-![作业](img\作业.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
