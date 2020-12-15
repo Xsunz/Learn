@@ -1,35 +1,4 @@
 # 【字节流、字符流、Properties】
-
-##### 反馈和复习
-
-```java
-东西比较多,需要多练习!
-1.File类
-2.递归
-3.字节流
-    字节输出流: OutputStream
-        文件的字节输出流: FileOutputStream
-            public void close();释放资源
-            public void flush();刷新缓冲区(对于字节流来说是空实现的方法)
-            public void write(int b);
-			public void write(byte[] bs);
-			public void write(byte[] bs,int startIndex,int len);
-    字节输入流: InputStream
-        文件的字节输入流: FileInputStream
-            public void close();释放资源
-            public int read();
-			public int read(byte[] bs);
-```
-
-##### 今日内容
-
-```java
-1.字符流
-2.IO流中标准异常处理(JDK7以前和JDK7新增的)
-3.Properties集合(也是一个Map集合)
-4.ResourceBundle工具类,专门用于读取Properties文件    
-```
-
 ### 第一章 字符流
 
 ##### 1.为什么要用字符流
@@ -499,29 +468,3 @@ public class ResourceBundleDemo {
     }
 }
 ```
-
-##### 总结
-
-```java
-能够使用FileWriter写数据的5个方法
-    public void write(int ch);//写一个字符
-	public void write(char[] chs);//写一堆字符
-	public void write(char[] chs,int startIndex,int len);//写一堆字符的一部分
-	public void write(String str);//写一个字符串
-	public void write(String str,int startIndex,int len);//写一个字符串的一部分
-能够说出FileWriter中关闭和刷新方法的区别
-    public void flush();//刷新缓冲区,但是不关闭流,继续使用这个流
-	public void close();//先刷新缓冲区,再关闭流,这个流不能继续使用
-能够使用FileWriter写数据实现换行和追加续写
-    fw.write("\r\n");//写入一个换行符
-	public FileWriter(String filepath,boolean append);使用带有boolean类的构造方法
-    public FileWriter(File file,boolean append);    
-能够使用FileReader读数据一次一个字符
-    public int read();//一次读取一个字符
-能够使用FileReader读数据一次一个字符数组
-    public int read(char[] chs);//一次读取一个字符数组
-能够使用Properties的load方法加载文件中配置信息
-   public void load(InputStream/Reader in);//读取配置文件
-   public void store(OutputStream/Writer out);//保存配置文件	
-```
-
