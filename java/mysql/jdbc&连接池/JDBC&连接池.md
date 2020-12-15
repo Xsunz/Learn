@@ -325,9 +325,6 @@ Java为数据库连接池提供了公共的接口: <span style="color:red">DataS
 				connction.close()
 			连接池厂商对connection对象的close()方法进行（增强），执行该方法时不是销毁对象，而是归还到连接池中
 				使用的动态代理技术进行增强的....
-					web综合案例会给大家复习动态代理
-					ssm框架中继续给大家复习动态代理
-					saas项目还会给大家复习动态代理
 ```
 
 ![image-20200810105309626](assets/image-20200810105309626.png) 
@@ -391,7 +388,6 @@ public class DruidDemo1 {
 
 #### ① 配置文件编写
 
-> key都是与定义好的，大家不要动，只需要修改对应的value参数即可
 
 ![image-20200810113900273](assets/image-20200810113900273.png) 
 
