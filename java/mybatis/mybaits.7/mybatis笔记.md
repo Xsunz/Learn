@@ -1,23 +1,3 @@
-#  MyBatis03
-
-**今日目标**
-
-```markdown
-1 MyBatis的缓存
-		自带的一级缓存
-		配置装载二级缓存
-1 MyBatis的注解开发
-		单表
-		多表
-		    ----配置文件方式
-		    ---了解注解方式
-2 案例demo
-		员工的crud
-		员工信息的分页展示
-```
-
-
-
 ## MyBatis缓存
 
 ### 1.1 缓存介绍
@@ -79,7 +59,7 @@ public void testOneCache() throws Exception {
 
  
 
-### 1.3 二级缓存（了解）
+### 1.3 二级缓存
 
 SqlSessionFactory级别的缓存，可以被多个sqlSession共用
 
@@ -323,7 +303,7 @@ public class MybatisTest {
 
 
 
-### 2.2 多表注解介绍【了解】
+### 2.2 多表注解介绍
 
 ![1571819780557](assets/1571819780557.png) 
 
