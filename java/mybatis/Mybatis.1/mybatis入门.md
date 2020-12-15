@@ -47,7 +47,6 @@
 ```java
 /**
  * 实体类
- * @author 黑马程序员
  * @Company http://www.itheima.com
  * 1.类都是public的
  * 2.类中成员变量都是private的
@@ -122,7 +121,6 @@ public class User implements Serializable {
 ```java
 /**
  * 用户的持久层接口
- * @author 黑马程序员
  * @Company http://www.itheima.com
  */
 public interface UserDao {
@@ -184,7 +182,6 @@ public interface UserDao {
 ```java
 /**
  * 测试mybatis的入门案例环境
- * @author 黑马程序员
  * @Company http://www.itheima.com
  */
 public class UserTest {
@@ -241,7 +238,6 @@ public class UserTest {
 ```java
 /**
  * 用户的持久层接口
- * @author 黑马程序员
  * @Company http://www.itheima.com
  */
 public interface UserDao {
@@ -259,7 +255,6 @@ public interface UserDao {
 ```java
 /**
  * 用户的持久层实现类
- * @author 黑马程序员
  * @Company http://www.itheima.com
  */
 public class UserDaoImpl implements UserDao {
@@ -297,7 +292,6 @@ public class UserDaoImpl implements UserDao {
 ```java
 /**
  * 测试编写dao实现类方式的环境
- * @author 黑马程序员
  * @Company http://www.itheima.com
  */
 public class UserTest {
@@ -417,7 +411,6 @@ public interface UserDao {
 ```java
 /**
  * 测试方法
- * @author 黑马程序员
  * @Company http://www.itheima.com
  */
 public class UserTest {
