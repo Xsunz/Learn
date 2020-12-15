@@ -1,49 +1,4 @@
 # 【Socket网络编程】
-
-##### 反馈复习
-
-```java
-1.缓冲流
-    BufferedOutputStream --> OutputStream
-    BufferedInputStream --> InputStream
-    ================================
-    BufferedWriter --> Writer
-    	public void newLine();//写一个跨平台的换行
-    BufferedReader --> Reader
-        public String readLine();//一次读取一行(直到读取换行符停止)
-2.转换流
-    字符集: 所有可支持的字符的集合
-	字符编码: 字符和码值的对应规则
-	编码: 把字符  --字符编码--> 对应码值
-	解码: 把码值 --字符编码--> 对应字符
-        
-    InputStreamReader 转换输入流,作用:指定编码读文件
-        public InputStreamReader(InputStream in,String charsetName);
-	OutputStreamWriter 转换输出流,作用:指定编码写文件
-         public OutputStreamWriter(OutputStream out,String charsetName);
-3.序列化流
-    ObjectOutputStream,序列化流
-    	public void writeObject(Object obj);//要求写的对象必须实现java.io.Serializable
-    ObjectInputStream,反序列化流
-        public Object readObject();
-4.打印流 
-    PrintStream ps = new PrintStream(String path/File file/OutputStream out);
-	ps.print(各种类型);
-	ps.println(各种类型);
-5.装饰设计模式
-    按照步骤执行即可:4个步骤
-6.common-io工具包 方便我们进行各种IO操作     
-```
-
-##### 今日内容
-
-```java
-1.网络编程有关的概念
-2.基于TCP网络协议的通信案例[需要独立完成代码]
-3.综合案例:文件上传    
-4.体验:BS模式编程    
-```
-
 ### 第一章 网络编程入门【了解】
 
 ##### 1.软件架构介绍
@@ -82,7 +37,7 @@ b.UDP协议:  用户数据报协议
          不能保证数据的安全和完整,但是性能高 
 ```
 
-##### 4.网络编程的三要素[重点]
+##### 4.网络编程的三要素
 
 ```java
 a.网络通信协议(基于TCP协议的通信)
@@ -144,7 +99,7 @@ public class InetAddressDemo {
 }            
 ```
 
-### 第二章 TCP通信【重点】
+### 第二章 TCP通信
 
 ##### 1.TCP通信分为客户端和服务器
 
@@ -197,7 +152,7 @@ ServerSocket类,代表服务器类
   public Socket accept();//接收连接到服务器客户端对象
   ```
 
-##### 5.简单的TCP通信实现(单向通信)【重点】
+##### 5.简单的TCP通信实现(单向通信)
 
 ```java
 /**
@@ -248,8 +203,7 @@ public class ServerDemo {
 }
 
 ```
-
-##### 6.简单的TCP通信实现(双向通信)【重点】
+##### 6.简单的TCP通信实现(双向通信)
 
 ![image-20200630115116745](img/image-20200630115116745.png)
 
@@ -318,15 +272,15 @@ public class ServerDemo {
 }
 ```
 
-### 第三章 综合案例:文件上传[理解]
+### 第三章 综合案例:文件上传
 
-##### 1.文件上传案例分析(画图演示)
+##### 1.文件上传案例分析
 
 ![image-20200630120104957](img/image-20200630120104957.png)
 
 
 
-##### 2.文件上传案例实现(代码演示)【增加点难度,多个客户端,多线程】
+##### 2.文件上传案例实现
 
 ```java
 /**
@@ -459,7 +413,7 @@ public class ServerDemoGood {
 }
 ```
 
-##### 3.模拟BS架构服务器(了解)
+##### 3.模拟BS架构服务器
 
 ```java
 体验BS架构:  
@@ -555,20 +509,3 @@ public class ServerDemo {
 }
 
 ```
-
-##### 总结:
-
-```java
-能够说出TCP协议特点
-    TCP特点:面向有链接
-    UDP特点:面向无连接    
-能够说出TCP协议下两个常用类名称
-        Socket客户端类
-        ServerSocket服务器类
-能够编写TCP协议下字符串数据传输程序[重点,必须会]
-        案例:TCP单向和双向通信
-能够理解TCP协议下文件上传案例[建议写两遍]
-        案例:文件上传案例    
-能够理解TCP协议下BS案例
-```
-
