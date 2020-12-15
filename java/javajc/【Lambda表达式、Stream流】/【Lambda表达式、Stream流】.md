@@ -500,23 +500,3 @@ public class StreamDemo06 {
     }
 }       
 ```
-
-##### 总结:
-
-```java
-能够"掌握"Lambda表达式的标准格式与省略格式
-	标准格式:
-    (数据类型 参数名,数据类型 参数名,....)->{方法体;return 返回值;}
-	省略格式:
-	参数名->复杂的表达式(123点)
-	
-能够通过集合、映射Map或数组方式获取流
-    集合.stream();
-	map.keySet().stream();
-	map.entrySet().stream();
-	Stream.of(数组)
-能够"掌握"常用的流操作
-    foreach,count,filter,limit,skip,map,concat    
-能够将流中的内容收集到集合和数组中
-```
-
