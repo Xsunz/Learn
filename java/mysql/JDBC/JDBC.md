@@ -17,7 +17,7 @@ JDBC规范定义接口，具体的实现由各大数据库厂商来实现 ，JDB
 
 我们在用java代码操作数据库时只需要会使用JDBC接口中的方法即可，使用简单
 
-![jdbc的概述](img\jdbc的概述.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mysql/JDBC/img/jdbc%E7%9A%84%E6%A6%82%E8%BF%B0.png)
 
 
 
@@ -158,7 +158,7 @@ next() 可以让指针向下移动一行 默认在第一行之前  返回值是b
 
  get类型(String 列名)
 
-![结果集的概述](img\结果集的概述.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mysql/JDBC/img/%E7%BB%93%E6%9E%9C%E9%9B%86%E7%9A%84%E6%A6%82%E8%BF%B0.png)
 
 ~~~
 @Test  //查询实现
@@ -325,9 +325,9 @@ preparedStatement：select * from 表 where   name=？ and  password=？;
 
 常见的连接池：
 
-![01](img\01.bmp)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mysql/JDBC/img/01.bmp)
 
-![连接池](img\连接池.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/mysql/JDBC/img/%E8%BF%9E%E6%8E%A5%E6%B1%A0.png)
 
 ## druid连接池的使用
 
@@ -587,35 +587,3 @@ jdbc+druid crud一套
 
         JDBCUtils.closeZY(null,preparedStatement,connection);
     }
-~~~
-
-
-
-作业1：三层架构完成转账业务
-
-需求：使用jdbc+druid+工具类操作的最终版（配置文件）
-
-![事务在java代码场景下的应用](img\事务在java代码场景下的应用.png)
-
-作业2：三层架构完成登录业务
-
-需求：使用jdbc+druid+工具类操作的最终版（配置文件）
-
-![作业](img\作业.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
