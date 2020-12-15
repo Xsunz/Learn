@@ -1,58 +1,4 @@
 # 【List、Collections、set】
-
-##### 反馈和复习
-
-```java
-1.课下辅导讲题的速度太快了
-2.上课重点内容多强调一下,非重点快速的过一遍
-回顾:
-	a.Collection集合体系
-        Collection根接口
-        	通用方法:
-				add remove size isEmpty contains toArray clear
-        	List 接口
-        		ArrayList
-        		LinkedList
-        	Set 接口
-        		HashSet
-        		LinkedHahSet
-        		TreeSet
-    b.迭代器遍历
-         Iterator<E> it = 集合对象.iterator();
-		 while(it.hasNext()){
-             E next =it.next();
-             System.out.println(next)
-         }
-    c.泛型的定义和使用
-        泛型类:
-			public class 类名<E>{
-                //在该类中就可以使用这个E类型
-            }
-        泛型方法:
-			public <T> 返回值类型 方法名(数据类型 参数名,...){
-                //在方法的参数上,方法体中就可以使用T这个类型
-            }
-        泛型接口:
-			public class 接口名<E>{
-                //在该接口中就可以使用这个E类型
-            }
-    d.常见数据结构    
-        栈结构: 先进后出
-        队列结构: 先进先出
-        数组结构: 查询快,增删慢
-        链表机构: 查询慢,增删快
-        红黑树结构: 查询速度非常恐怖
-            
-```
-
-##### 今日内容
-
-```java
-1.List接口以及他的实现类
-2.Set接口以及他的实现类
-3.Collections类(Arrays类)     
-```
-
 ### 第一章 List接口
 
 ##### 1.List接口的特点
@@ -152,7 +98,7 @@ public class LinkedListDemo {
             
 ```
 
-##### 5 LinkedList源码分析[了解]
+##### 5 LinkedList源码分析
 
 ### 第二章 Collections类
 
@@ -433,7 +379,7 @@ public class TreeSetDemo {
 }            
 ```
 
-##### 3.6 哈希表结构的介绍[扩展]
+##### 3.6 哈希表结构的介绍
 
 - 对象的哈希值(对象的"数字指纹")
 
@@ -521,29 +467,3 @@ public class TestHashDemo02 {
     }
 }    
 ```
-
-##### 总结
-
-```java
-1.Collection集合体系
-    根接口:Collection(7个方法)
-        子接口:List(4个,有序,有索引,可重复)
-            实现类:ArrayList(0个)
-            实现类:LinkedList(8个)    
-        子接口:Set(0个,无序,无索引,不可重复)
-            实现类:HashSet(0个,无序,无索引,不可重复)
-            实现类:LinkedHashSet(0个,有序,无索引,不可重复)  
-    		实现类:TreeSet(0个,无序(自然顺序),无索引,不可重复)
-2.Collections工具类 
-        shuffle sort
-        public static void sort(集合,new Comparator<集合的泛型>(){
-            	public int compare(对象1,对象2){
-                 	//升序 1-2   
-                }
-        });       
-3.哈希表通过哈希值和equals双重标准,判断元素是否重复
-    所有当我们使用哈希值结构的集合来保存自定义类型时,需要在自定义类中重写hashCOde和equals方法,以保证哈希表的唯一性!!
-```
-
-
-
