@@ -1,26 +1,3 @@
-#  MyBatis
-
-**今日目标**
-
-```markdown
-
-1 动态sql
-			if标签
-			choose标签
-			foreach标签
-			set标签
-			sql片段（sql工具）
-		     
-2 mybatis操作多表
-			关联方式  --掌握
-			嵌套方式  --掌握
-				延迟加载方案
-			大量标签只能多写多练	
-
-```
-
-
-
 ### 动态sql
 
 **1）if标签**
@@ -212,7 +189,7 @@ public List<User> findByPojo(QueryVo queryVo);
 
 
 
-### 11.3 sql片段【了解】
+### 11.3 sql片段
 
 ```xml
 <!--
