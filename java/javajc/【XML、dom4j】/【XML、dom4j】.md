@@ -1,41 +1,4 @@
 # 【XML、dom4j】
-
-##### 反馈复习
-
-```java
-建议一起复习(没有时间专门复习,但是我们准备 总结文档 课下可以自己复习)
-1.反射
-   a.获取Class对象
-    	Class clazz = 类名.class
-        Class clazz = 对象名.getClass();
-		Class clazz = Class.forName("全限定类名")
-   b.通过反射获取构造方法
-        clazz.getConstructor(参数类型.class)  
-        clazz.getDeclaredConstructor(参数类型.class)      
-   c.通过反射获取成员方法 
-         clazz.getMethod(String name,参数类型.class)  
-         clazz.getDeclaredMethod(String name.参数类型.class)           
-2.注解
-   a.定义格式
-   b.属性格式
-   c.使用格式
-   d.value属性   
-            
-    public @interface 注解名{
-    	数据类型 value() default 默认值;        
-    }
-	@注解名(value的值即可)
-    
-```
-
-##### 今日内容
-
-```java
-XML:非常重点(以后学习框架必备的)
-    重点必须掌握
-    非重点了解即可
-```
-
 ### 第一章 XML概述
 
 ##### 1.XML的初体验
@@ -99,7 +62,7 @@ XML:非常重点(以后学习框架必备的)
   c.我们以后框架的配置文件(我们学到Tomcat,Mybatis再说)    
   ```
 
-##### 2.XML的语法学习[重点必须掌握]
+##### 2.XML的语法学习
 
 - ==XML的组成元素==
   
@@ -176,7 +139,7 @@ XML:非常重点(以后学习框架必备的)
     ]]>       
     ```
 
-### 第二章 XML约束[重点]
+### 第二章 XML约束
 
 ##### 1.DTD约束
 
@@ -206,7 +169,7 @@ XML:非常重点(以后学习框架必备的)
   </书架>    
   ```
 
-- DTD约束语法(了解)
+- DTD约束语法
   - DTD的引入
   
     ```java
@@ -220,7 +183,7 @@ XML:非常重点(以后学习框架必备的)
        <!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">     
     ```
   
-  - DTD中的数量词(建议掌握)
+  - DTD中的数量词
   
     ```java
     标签*: 表示该标签可以出现任意次
@@ -256,7 +219,7 @@ XML:非常重点(以后学习框架必备的)
   Schema本身其实也XML,但是后缀叫xsd    
   ```
 
-- ==Schema约束体验[重点重点重点]==
+- ==Schema约束体验==
 
   ```java
   我们开发的重点是: 根据框架提供的Schema约束文档,编写出符合要求的XML文件!!!
@@ -269,15 +232,7 @@ XML:非常重点(以后学习框架必备的)
   ```java
   命名空间: 相当于Java中的包
   ```
-
-##### 3.XML约束的学习要求
-
-```java
-无论是DYD约束还是Schema约束,我们的要求不是编写这些约束文档,
-而是根据框架编写好的约束文档,写出符合要求的XML文件!!!
-```
-
-### 第三章 XML解析[重点]
+### 第三章 XML解
 
 ##### 1. 什么是XML解析
 
@@ -407,27 +362,3 @@ XML:非常重点(以后学习框架必备的)
       }
   }
   ```
-
-  ##### 总结
-
-  ```java
-  能够说出XML的作用
-  了解XML的组成元素
-      文档声明 <?...?>
-      标签: <a> </a>
-      属性: 属性名="属性值"
-  ================================    
-  能够说出有哪些XML约束技术(重点内容)
-       根据DTD约束写出正确的XML
-       根据Schema约束写出正确的XML 
-          
-  能够说出解析XML文档DOM方式原理
-        整个XML一起读取,解析后返回一个Dom树  
-  能够使用dom4j解析XML文档(重点内容)
-  =================================        
-  能够使用xpath解析XML或HTML文档(重点内容,XPath可以作为了解)
-      
-  ```
-
-  
-
