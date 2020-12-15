@@ -1,31 +1,4 @@
 # 	【volatile关键字、原子性】
-
-##### 昨日回顾
-
-```java
-1.创建新的线程方式
-    a.继承方式
-    b.实现方法
-    c.匿名内部类的简化方式
-2.多线程并发的情况下可能存在的安全问题   
-   a.可见性问题
-    	主内存的变量更新之后,工作内存中副本没有立刻得到最新的值,不可见性
-   b.有序性问题
-    	public static int a = 0;
-    	public static boolean b = false;
-		单线程中代码重排是没有影响的,但是多线程中代码重排对结果有影响的,代码的无序性
-   c.原子性问题 
-        a++操作,分成三步: a.获取a b.增加a c更新a,这三步操作可能被其他线程打断,不能保证原子性   
-```
-
-##### 今日内容
-
-```java
-1.volatile关键字[理解]
-2.原子类(变量的原子性问题)[理解] 
-3.synchronized关键字(多行无关代码的原子性问题) [重点]   
-```
-
 ### 第一章 volatile关键字【理解】
 
 ##### **1.1** volatile是什么
@@ -121,18 +94,9 @@ public class AutomicDemo {
     13752(还是小于20000的)
 ```
 
-##### 小结:volatile的作用
+### 第二章 原子类
 
-```java
-a.解决可见性
-b.解决有序性
-c."不能"解决原子性    
-    
-```
-
-### 第二章 原子类【理解】
-
-##### 2.1 原子类【理解】
+##### 2.1 原子类
 
 ```java
 a.什么是原子类?
@@ -145,7 +109,7 @@ c.原子类有哪些?
     AtomicBoolean 对boolean基本类型的原子类
 ```
 
-##### 2.2 AtomicInteger类示例【重点】
+##### 2.2 AtomicInteger类示例
 
 ```java
 a.AtomicInteger是什么?
@@ -174,11 +138,11 @@ d.使用AtomicInteger改写案例
     20000(每次都是20000)
 ```
 
-##### 2.3 AtomicInteger类的工作原理-CAS机制【了解】
+##### 2.3 AtomicInteger类的工作原理-CAS机制
 
 ![image-20200313152238815](img/image-20200313152238811.png)
 
-##### 2.4 AtomicIntegerArray类示例【了解】
+##### 2.4 AtomicIntegerArray类示例
 
 - 非原子类数组在多线程并发时会有问题
 
@@ -246,7 +210,7 @@ d.使用AtomicInteger改写案例
   	[1000,1000,.....都是1000]
   ```
 
-### 第三章 synchronized关键字【重点】
+### 第三章 synchronized关键字
 
 ##### 3.1 AtomicInteger的不足之处
 
@@ -257,7 +221,7 @@ d.使用AtomicInteger改写案例
 但是: 原子类无法解决多句代码的原子性问题
 ```
 
-##### 3.2 多行代码的原子性安全问题--卖票案例【非常重点】
+##### 3.2 多行代码的原子性安全问题--卖票案例
 
 ```java
 /**
@@ -372,37 +336,3 @@ public class TestDemo {
 注意:
 	a.synchronized()中的锁对象,可以是任意对象,但是必须保证多个线程使用的是同一个锁对象   
 ```
-
-##### 总结
-
-````java
-能够说出volatile关键字的作用
-    public static volatile 数据类型 变量名 = 值;
-	保证:
-		a.这个变量的可见性(主内存中变量的值发生修改,强制要求工作内容会更新到最新的值)
-        b.保证变量的有序的(如果多个变量使用volatile修饰,那么这些编译后不会进行代码重排)
-        c.不能保证变量操作的原子性    
-能够掌握原子类AtomicInteger的使用
-    public static AtomicInteger ai = new AtomicInteger(0);
-	ai.getAndIncrement();//相当于ai++
-	ai.incrementAndGet();//相当于++ai
-能够理解原子类的工作机制
-   原子类底层采用CAS机制(比较然后替换机制,也称为自旋机制,称为乐观锁)
-能够使用同步代码块解决线程安全问题
-    synchronized(锁对象){
-    	需要同步的代码/需要保证原子性的代码
-    }
-````
-
-
-
-
-
-
-
-
-
-
-
-
-
