@@ -1,12 +1,5 @@
 # 【Lambda表达式、Stream流】
 
-##### 反馈和复习
-
-```java
-1.每天学习到新的单词的时候,提一下什么意思
-2.老师单词发音老读错
-3.建议的晚自习适当延长,可以扩展一些其他内容
-复习:
 	1.线程池
         ExecutorService service = Executors.newFixedThreadPool(int 线程的最大数量);
 		service.submit(Runnable r);//提交无返回值的任务
@@ -33,16 +26,6 @@
             要求同时启动两个线程,交替输出1212121212121212    
                 
                 
-```
-
-##### 今日内容
-
-```java
-面试时+钱的东西 +2000
-JDK8的新特性 JDK7
-1.Lambda表达式(函数式编程)
-2.Stream流(运用Lambda表达式)    
-```
 
 ### 第一章 Lambda表达式
 
