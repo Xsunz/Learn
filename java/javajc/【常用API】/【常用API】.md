@@ -1,34 +1,4 @@
 # 【常用API】
-
-##### 反馈和复习
-
-```java
-ArrayList<E>类
-   构造:
-	ArrayList<引用类型> arr = new ArrayList<引用类型>();
-   方法:
-	增: 
-		排队: add(E e); 插队:add(int index,E e);
-	删:
-		根据元素删除:remove(要删除的元素); 根据索引删除元素: remove(int index);
-	改:
-		set(int index,E e);
-	查:
-		size() get(int index);
-```
-
-##### 今日内容
-
-```java
-1.Object[必须掌握!!]
-2.Date[日期类/时间类,必须掌握] 显示时间
-3.DateFormat[日期格式化,必须掌握]
-========================    
-4.Calendar[日历类/时间类,比较重点]
-5.Math[数学计算的相关类,重点但是简单]
-6,System类[重在理解]    
-```
-
 #### 第一章 Object类
 
 ##### 1.1 Object类的介绍
@@ -522,48 +492,3 @@ public class SystemDemo03 {
     }
 }
 ```
-
-##### 总结
-
-```java
-能够说出Object类的特点
-    所有类的父类,所有对象都拥有该类中方法
-能够重写Object类的toString方法
-    该方法的作用:获取当前对象的字符串表示
-        a.默认情况下,字符串的格式:包名.类名@该对象的地址值
-        b.我们一般会重写toString,返回的字符串是该对象的属性值(alt+insert-->toString)
-        c.我们实际上连toString方法也不需要调用,直接打印对象名即可!    
-            
-能够重写Object类的equals方法
-     该方法的作用:比较当前对象和指定对象是否相等
-         a.默认情况下比较两个对象的地址值
-         b.我们一般也会重写equals,比较两个对象的属性值(alt+insert-->equals and hashCode)
-         
-
-能够使用日期类输出当前日期
-    Date now = new Date(); //当前日期   
-	SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
-能够使用将日期格式化为字符串的方法
-    String time = sdf.format(Date对象);
-能够使用将字符串转换成日期的方法
-    Date date = sdf.parse("3000年10月10日 10时10分10秒")
-         
-=====================以上API重点掌握====================         
-=====================以下API理解即可====================          
-能够使用Calendar类的get、set、add方法计算日期
-    a.获取Calendar的子类对象
-    	Calendar cc = Calendar.getInstance();
-	b.对时间进行增加/减少/修改/查询
-        cc.get(Calendar.YEAR);
-		cc.add(Calendar.YEAR,int value);
-		cc.set(Calendar.YEAR,int value);
-能够使用Math类对某个浮点数进行四舍五入取整
-    Math的常用静态方法;
-		abs,ceil,floor,pow,round
-能够使用System类获取当前系统毫秒值
-     System的常用静态方法;
-		currentTimeMillis 获取当前时间的毫秒值
-        exit(0) 结束JVM
-        arraycopy(源,起始,目标,起始,个数)    
-```
-
