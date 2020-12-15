@@ -44,7 +44,7 @@ PS:本地仓库
 	就是远程仓库，仓库中jar由专业团队（maven团队）统一维护。
 	中央仓库的地址：http://repo1.maven.org/maven2/
 
-![仓库](img\仓库.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/maven/maven.1/img/仓库.png)
 
 
 
@@ -97,9 +97,9 @@ file---settings--搜索maven:
 		     VM Options: -DarchetypeCatalog=internal
 ~~~
 
-![maven的配置1](img\maven的配置1.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/maven/maven.1/img/maven的配置1.png)
 
-![maven配置2](img\maven配置2.png)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/maven/maven.1/img/maven配置2.png)
 
 
 
@@ -114,7 +114,7 @@ maven管理javaweb项目并发布访问（掌握）
 		src-main-文件色的resources:放的都是配置文件
 ~~~
 
-![maven结构](img\maven结构.bmp)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/maven/maven.1/img/maven结构.bmp)
 
 ## maven统一命令
 
@@ -129,7 +129,7 @@ maven管理javaweb项目并发布访问（掌握）
 scope标签依赖范围
 ~~~
 
-![1](img\11.bmp)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/maven/maven.1/img/11.bmp)
 
 ## lombok插件
 
@@ -177,11 +177,11 @@ public class Emp {
 
 1 在设置setting 中找到plugins。在检索框中检索lom：
 
-![1](img\1.bmp)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/maven/maven.1/img/1.bmp)
 
 2 在setting中找到 下图界面，在右侧红框出打钩：
 
-![2](img\2.bmp)
+![Image](https://raw.githubusercontent.com/Xsunz/Learn/main/java/maven/maven.1/img/2.bmp)
 
 3 重启idea
 
