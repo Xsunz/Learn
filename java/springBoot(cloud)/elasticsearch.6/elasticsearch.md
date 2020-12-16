@@ -1,12 +1,3 @@
-
-
-# 学习目标
-
-* 了解集群和分布式的概念
-* 了解部署elasticsearch集群
-* 学习HighLevelRestClient操作ES
-* 掌握SpringDataElasticsearch操作ES  
-
 # 1 集群和分布式  
 
 集群和分布式的概念有联系也有区别，我们一起来看。  
