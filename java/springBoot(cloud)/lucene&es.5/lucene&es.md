@@ -1,11 +1,3 @@
-# **学习目标** 
-
-* 理解什么是全文检索  
-* 理解lucene的应用场景  
-* 掌握lucene中的几个概念  
-* 独立安装Elasticsearch  
-* 会使用Kibana操作Elasticsearch  
-
 # 1 什么是全文检索  
 
 ## 1.1 数据分类  
