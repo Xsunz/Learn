@@ -1,0 +1,18 @@
+1.Subject
+  login
+
+  logout
+
+2.AuthenicationToken 
+  UsernamePassworkToken
+
+3.认证的返回值：AuthenticationInfo      实现类：SimpleAuthenticationInfo（三个参数   user,password,name）
+
+4.授权的返回值：AuthorizationInfo       实现类:SimpleAuthorizationInfo   addStringPermissions(Collection...);
+
+
+5.Realm域：extends AuthorizingRealm 
+
+
+6.密码比较器:SimpleCredentialsMatcher
+  Md5Hash();
