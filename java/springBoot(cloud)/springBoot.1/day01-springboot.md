@@ -1,18 +1,3 @@
-# 学习目标
-
-* 了解Spring Boot的好处
-* 掌握Spring Boot加载配置文件的方式
-* 掌握Spring Boot 的基本使用
-* 掌握Spring Boot整合SSM框架
-
-# Spring Boot  简介
-
-主要了解以下3个问题：
-
-- 什么是Spring Boot
-- 为什么要学习Spring Boot
-- Spring Boot的特点  
-
 ## 1.1 什么是Spring Boot
 
 Spring Boot 是在Spring框架基础上创建的一个全新框架。
