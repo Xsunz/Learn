@@ -1,11 +1,3 @@
-# 学习目标
-
-* 掌握Spring Boot 整合常用的框架
-* 掌握Spring Boot 自动配置原理
-* 掌握自定义启动器
-* 了解Spring Boot 监控
-* 掌握Spring Boot 项目部署
-
 # SpringBoot 整合Thymeleaf  
 
 ## 1.1 Thymeleaf 简介
