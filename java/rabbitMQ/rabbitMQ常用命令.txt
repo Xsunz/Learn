@@ -1,0 +1,25 @@
+﻿
+1、启动rabbitMQ
+rabbitmqctl start_app
+2、开启web控制台的访问
+rabbitmq-plugins enable rabbitmq_management
+3、然后就可以访问了
+http://127.0.0.1:15672/
+4、但是需要输入用户名和密码
+使用以下命令查看能使用的用户名和密码
+rabbitmqctl list_users
+目前里面有一个默认的用户名是guest，密码也是guest
+
+
+还有其他命令：
+
+关闭rabbitmq: rabbitmqctl stop_app
+
+
+还原： rabbitmqctl reset
+
+
+启动： rabbitmqctl start_app
+添加用户： rabbitmqctl add_user root root
+设置权限：rabbitmqctl set_permissions -p / root ".*" ".*" ".*"
+查看用户： rabbitmqctl list_users
